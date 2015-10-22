@@ -1,7 +1,7 @@
 <?php 
 	/*
 	 * Plugin Name:       TS WP Plugin Template
-	 * Version:           1.0.0
+	 * Version:           1.1.0
 	 * Plugin URI:        http://tuningsynesthesia.com/
 	 * Description:       A WP plugin template for Tuning Synesthesia. Its origianl code was taken from '<a href="https://github.com/hlashbrooke/WordPress-Plugin-Template">WordPress-Plugin-Template</a>' by hlashbrooke and modified for their purpose. How to use: change its file names and variable names at 4 parts in 'plugin.php' and 1 part in 'includes/class-tspt.php')
 	 * Author:            Author Name
@@ -50,13 +50,14 @@ if (!function_exists('tspt')) {
             require_once($module);
         }
 		/**
-		 * Returns the main instance of TS_PTShortcode to prevent the need to use globals.
+		 * Returns the main instance of TS_PTShortcode and TS_PTShortcodeajax to prevent the need to use globals.
 		 *
 		 * @since  1.0.0
 		 * @return object
 		 */
 		$instance = tspt::instance( __FILE__, $_token, $_version );
 		$instance->ptshortcode = TS_PTShortcode::instance( $instance );
+		$instance->ptshortcodeajax = TS_PTShortcodeajax::instance( $instance );
 		return $instance;
 	} // End tspt()
 } 

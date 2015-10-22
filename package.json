@@ -1,7 +1,7 @@
 {
   "name": "ts-wp-plugin-template",
   "title": "TS WP Plugin Template",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "homepage": "http://tuningsynesthesia.com/",
   "main": "gruntfile.js",
   "devDependencies": {
