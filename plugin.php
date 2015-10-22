@@ -55,13 +55,14 @@ if (!function_exists('tspt')) {
 		 **/
 		add_action('init', 'tspt_piklist_checker', 0 );
 		/**
-		 * Returns the main instance of TS_PTShortcode to prevent the need to use globals.
+		 * Returns the main instance of TS_PTShortcode and TS_PTShortcodeajax to prevent the need to use globals.
 		 *
 		 * @since  1.0.0
 		 * @return object
 		 */
 		$instance = tspt::instance( __FILE__, $_token, $_version );
 		$instance->ptshortcode = TS_PTShortcode::instance( $instance );
+		$instance->ptshortcodeajax = TS_PTShortcodeajax::instance( $instance );
 		return $instance;
 	} // End tspt()
 } 
