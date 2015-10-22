@@ -152,6 +152,7 @@ class Tspt {
         // Load admin JS & CSS
         add_action('admin_enqueue_scripts', array($this, 'admin_enqueue_scripts'), 10, 1, 999);
         add_action('admin_enqueue_scripts', array($this, 'admin_enqueue_styles'), 10, 1, 999);
+        add_filter('piklist_admin_pages', array($this, 'admin_pages'), 0);
     } // End init_admin()
 
     /**
@@ -218,7 +219,6 @@ class Tspt {
 
     } // End enqueue_scripts ()
 
-
     /**
      * Load frontend CSS.
      * @access  public
@@ -232,7 +232,42 @@ class Tspt {
 
         wp_register_style($this->_token . '-dummystyle', esc_url( $this->assets_url ) . 'css/dummystyle' . $this->script_suffix . '.css', array(), $this->_version, false );
     } // End enqueue_styles ()
+    
+    /* --------------------------------------
+     *
+     * Piklist Related
+     *
+     * --------------------------------------*/
+    /**
+     * Piklist Admin Pages
+     * @access  public
+     * @since   1.1.0
+     * @return  Admin Setting Pages
+     */
+    public function admin_pages($pages) {
+        $pages[] = array(
+            'page_title' => __('TS Plugin Template', $this->_token)
+            , 'menu_title' => __('TS Plugin Template', $this->_token)
 
+            /**
+             * Comment out both of the next 2 lines starting with key "sub_menu"
+             * for a custom setting page on the admin main menu.
+             */
+            //,'sub_menu' => 'themes.php' // Uncomment this for a custom setting page under the menu "Appearance" (and comment out below)
+            ,'sub_menu' => 'options-general.php' // Uncomment this for a custom setting page under the menu "Settings" (and comment out above)
+
+            , 'menu_icon' => esc_url($this->assets_url) . 'img/logo_tspt-16.png'
+            , 'page_icon' => esc_url($this->assets_url) . 'img/logo_tspt-32.png'
+
+            , 'capability' => 'manage_options'
+            , 'menu_slug' => 'tspt_settings'
+            , 'setting' => 'tspt_settings'
+            , 'single_line' => false
+            , 'default_tab' => 'Examples'
+            , 'save_text' => __('Save Settings')
+        );
+        return $pages;
+    } // End admin_pages ()
 
     /* --------------------------------------
      *
@@ -240,7 +275,6 @@ class Tspt {
      * Do not change here unless you know what you are doing
      *
      * --------------------------------------*/
-
     /**
      * Object Instance
      *
