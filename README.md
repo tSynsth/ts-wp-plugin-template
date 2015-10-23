@@ -3,7 +3,7 @@ A WP plugin template for a Team [Tuning Synesthesia](http://tuningsynesthesia.co
 
 ## Branches and Variations
 
-According to the type of plugin being about to be developed, she/he shall look at the appropriate plugin template variation that was built upon separate branches. 
+According to the type of plugin being developed, she/he shall look at the appropriate plugin template variation that was built upon separate branches. 
 
 ```
 ts-wp-plugin-template
@@ -13,7 +13,8 @@ ts-wp-plugin-template
 `-- ver-piklist
 ```
 
-* v1.0.0 Banch "master" is the default template 
+* v1.0.0 Banch "master" (currently inherits "var-default")
+* v1.0.0 Banch "var-default" is this default template which comes up with its minimum codes.
 * v1.1.0 Banch "var-ajax" with Ajax availability
 * v1.1.0 Barnch "var-piklist" with [piklist](https://piklist.com/) availability
 * v1.2.0 Barnch "ver-ajax+piklist" with Ajax and [piklist](https://piklist.com/) availability
