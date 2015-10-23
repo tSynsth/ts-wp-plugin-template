@@ -1,18 +1,18 @@
 #About
-A WP plugin template for Tuning Synesthesia. Its origianl code was taken from [Wordpress-plugin-template](https://github.com/hlashbrooke/WordPress-Plugin-Template) by hlashbrooke and modified for some purpose.
+A WP plugin template for a Team [Tuning Synesthesia](http://tuningsynesthesia.com/tools/). Its origianl code was taken from [Wordpress-Plugin-Template](https://github.com/hlashbrooke/WordPress-Plugin-Template) by hlashbrooke and improved for some specific purposes requested by the team.
+
 ## Versions available
 
+```
 ts-wp-plugin-template
 |-- master / ver-default
 |-- ver-ajax
 |-- ver-ajax+piklist
 `-- ver-piklist
+```
 
-//This tutorial is using ver-ajax
-
-
-* v1.0.0 master is the default template 
-* v1.1.0 ver-ajax has ajax function inside
+* v1.0.0 Banch "master" is the default template 
+* v1.1.0 Banch "var-ajax" with Ajax availability
 * v1.1.0 ver-piklist has [piklist](https://piklist.com/) inside
 * v1.2.0 ver-ajax+piklist has ajax and also [piklist](https://piklist.com/)
 
@@ -82,7 +82,13 @@ ts-wp-plugin-template
 2. In your terminal/cli navigate to the plugin directory ts-wp-plugin-template
 3. Install node_module using the command `npm install`
 
-###Changing Name and Data
+###
+
+We are configurating Name and Data
+```
+The steps below reflect the varition with Ajax "var-ajax"
+```
+
 1. In plugin.php
 * Plugin Name
 -> Name of the plugin. 
@@ -132,9 +138,9 @@ After:
 4. In readme file
 
 ****
-
-####After done with all the folder data and name, try to activate the plugin to test your plugin
-there are already two ready shortcode inside you can use:
+####Follow up after configuration
+After done with all the folder data and name, try to activate the plugin to test your plugin
+there are two sample shortcodes that can be used to make sure your configuration is working:
 1. ts_ptshortcode: simple shortcode to input $content | [ts_ptshortcode] [/ts_ptshortcode]
 2. ts_ptshortcodeajax: shortcode with ajax | [ts_ptshortcodeajax] [/ts_ptshortcodeajax]
 ****
@@ -152,14 +158,14 @@ add_shortcode("ts_ptshortcode", array($this,"ptshortcode"));
 //change the code to: add_shortcode("ts_testercode", array($this, "testercode"));
 }
 ```
-* Becareful in very beginning of the code, It has a upper-case letter 
+* Be careful in very beginning of the code, It has a upper-case letter 
 ```php
 if(!class_exists("TS_PTShortcode")){
 class TS_PTShortcode{
 
 }}
 ```
-Becareful when replacing every name, if you change it like the one in the template it becoming like this:
+Be careful when replacing every name, if you change it like the one in the template it becoming like this:
 ```php
 if(!class_exists("TS_TesterCode")){
 class TS_TesterCode{
