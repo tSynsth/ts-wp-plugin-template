@@ -1,7 +1,7 @@
 #About
 A WP plugin template for a Team [Tuning Synesthesia](http://tuningsynesthesia.com/tools/). Its origianl code was taken from [Wordpress-Plugin-Template](https://github.com/hlashbrooke/WordPress-Plugin-Template) by hlashbrooke and improved for some specific purposes requested by the team.
 
-## Versions available
+## Variations available
 
 ```
 ts-wp-plugin-template
@@ -11,11 +11,12 @@ ts-wp-plugin-template
 `-- ver-piklist
 ```
 
+According to the type of plugin a memeber is about to create, she/he shall look at the appropriate plugin variation built upon separate branches. 
+
 * v1.0.0 Banch "master" is the default template 
 * v1.1.0 Banch "var-ajax" with Ajax availability
-* v1.1.0 ver-piklist has [piklist](https://piklist.com/) inside
-* v1.2.0 ver-ajax+piklist has ajax and also [piklist](https://piklist.com/)
-
+* v1.1.0 Barnch "var-piklist" with [piklist](https://piklist.com/) availability
+* v1.2.0 Barnch "ver-ajax+piklist" with Ajax and [piklist](https://piklist.com/) availability
 
 
 #Setup
