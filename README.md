@@ -1,7 +1,9 @@
 #About
 A WP plugin template for a Team [Tuning Synesthesia](http://tuningsynesthesia.com/tools/). Its origianl code was taken from [Wordpress-Plugin-Template](https://github.com/hlashbrooke/WordPress-Plugin-Template) by hlashbrooke and improved for some specific purposes requested by the team.
 
-## Variations available
+## Branches and Variations
+
+According to the type of plugin being about to be developed, she/he shall look at the appropriate plugin template variation that was built upon separate branches. 
 
 ```
 ts-wp-plugin-template
@@ -11,39 +13,13 @@ ts-wp-plugin-template
 `-- ver-piklist
 ```
 
-According to the type of plugin a memeber is about to create, she/he shall look at the appropriate plugin variation built upon separate branches. 
-
 * v1.0.0 Banch "master" is the default template 
 * v1.1.0 Banch "var-ajax" with Ajax availability
 * v1.1.0 Barnch "var-piklist" with [piklist](https://piklist.com/) availability
 * v1.2.0 Barnch "ver-ajax+piklist" with Ajax and [piklist](https://piklist.com/) availability
 
+## Folder Structure and Variations
 
-#Setup
-
-###Prerequisites
-
-| Required Installation	| Mac	| Windows | Notes (For Windows) |
-|---		|---	|---  	|---	|
-| 1. Python	| installed by default	| required |  [required v2.7.3 for node.js](https://nodejs.org/en/download/) |
-| 2. Node.js 	| [required](http://blog.teamtreehouse.com/install-node-js-npm-mac)	| [required](https://nodejs.org/en/download/) | required for npm	|
-| 3. Ruby 		| installed by default	| required	| required for SASS	|
-| 4. SASS 		| [required](http://sass-lang.com/install)	| required  | ruby gems	|
-| 5. Grunt	| [required](http://gruntjs.com/getting-started)| [required](http://gruntjs.com/getting-started) |
-| 6. Compass 	| [required](http://thesassway.com/beginner/getting-started-with-sass-and-compass)	| required | ruby gems & [required for SASS](http://thesassway.com/beginner/getting-started-with-sass-and-compass) |
-
-You can install Python, Node.js and Ruby through their excutable file, but for others you need to run commands tool for installation. You need to run as an administrator to install. For mac you can use `sudo` at every command and for windows run as administrator.
-
-**SASS**
-`gem install sass` 
-
-**Grunt**
-`npm install -g grunt-cli`
-
-**Compass**
-`gem install compass`
-
-##Folder Structure
 ```
 ts-wp-plugin-template
 |-- assets
@@ -77,6 +53,32 @@ ts-wp-plugin-template
 |-- plugin.php
 `-- README.md
 ```
+
+#Setup
+
+###Prerequisites
+
+| Required Installation	| Mac	| Windows | Notes (For Windows) |
+|---		|---	|---  	|---	|
+| 1. Python	| installed by default	| required |  [required v2.7.3 for node.js](https://nodejs.org/en/download/) |
+| 2. Node.js 	| [required](http://blog.teamtreehouse.com/install-node-js-npm-mac)	| [required](https://nodejs.org/en/download/) | required for npm	|
+| 3. Ruby 		| installed by default	| required	| required for SASS	|
+| 4. SASS 		| [required](http://sass-lang.com/install)	| required  | ruby gems	|
+| 5. Grunt	| [required](http://gruntjs.com/getting-started)| [required](http://gruntjs.com/getting-started) |
+| 6. Compass 	| [required](http://thesassway.com/beginner/getting-started-with-sass-and-compass)	| required | ruby gems & [required for SASS](http://thesassway.com/beginner/getting-started-with-sass-and-compass) |
+
+You can install Python, Node.js and Ruby through their excutable file, but for others you need to run commands tool for installation. You need to run as an administrator to install. For mac you can use `sudo` at every command and for windows run as administrator.
+
+**SASS**
+`gem install sass` 
+
+**Grunt**
+`npm install -g grunt-cli`
+
+**Compass**
+`gem install compass`
+
+
 
 ###Setup Project
 1. Download or clone ts-wp-plugin-template to your computer, for clone its require to have Git installed and GitHub account
